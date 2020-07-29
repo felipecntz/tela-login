@@ -1,0 +1,52 @@
+<ion-content fullscreen color="dark"> 
+<ion-slides>
+<ion-slide>
+  <div class="slide-inner ion-padding">
+    <span>Cadastro</span>
+
+    <ion-item class="ion-margin-top" lines="none">
+      <ion-input type="text" placeholder="Nome"></ion-input>
+    </ion-item>
+
+    <ion-item class="ion-margin-top" lines="none">
+      <ion-input type="text" placeholder="CPF"></ion-input>
+    </ion-item>
+
+    <ion-item class="ion-margin-top" lines="none">
+      <ion-input type="date" placeholder="Data de nascimento"></ion-input>
+    </ion-item>
+
+    <ion-item class="ion-margin-top" lines="none">
+      <ion-label position="floating">Gênero</ion-label>
+      <ion-select placeholder="Selecione um">
+        <ion-select-option value="feminino">Feminino</ion-select-option>
+        <ion-select-option value="masculino">Masculino</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item class="ion-margin-top" lines="none">
+      <ion-input type="text" placeholder="Celular"></ion-input>
+    </ion-item>
+
+    <ion-item class="ion-margin-top" lines="none">
+      <ion-input type="email" placeholder="E-mail"></ion-input>
+    </ion-item>
+
+    <ion-item class="ion-margin-top" lines="none">
+      <ion-input type="password" placeholder="Senha"></ion-input>
+    </ion-item>
+
+    <ion-item class="ion-margin-top" lines="none">
+      <ion-input type="password" placeholder="Confirmar senha"></ion-input>
+    </ion-item>
+
+    <ion-button class="ion-margin-top" (click)="register()" color="light" expand="block">
+      Cadastrar
+    </ion-button>
+    <ion-button class="ion-margin-top" (click)="register()" color="light" expand="block" routerLink="/login">
+      Voltar para tela de login
+    </ion-button>
+  </div>
+</ion-slide>
+</ion-slides>
+</ion-content>
